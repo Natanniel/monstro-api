@@ -1,8 +1,9 @@
+const nodemon = require("nodemon");
 const server = require("./app");
 //const { ObjectID, ObjectId } = require("mongodb");
 -
-server.listen(3000, async function () {
-  console.log("Servidor cardapio em funcionamento !");
+server.listen(61613, async function () {
+  console.log("Servidor em funcionamento !");
 
 //  const mqtt = require('mqtt') 
  // const client  = mqtt.connect('tcp://monstro.tv.br:61616')
@@ -16,19 +17,20 @@ server.listen(3000, async function () {
 
   //mesa.save();
 
-const puppeteer = require('puppeteer');
+//const puppeteer = require('puppeteer');
 
-  (async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto('https://dejt.jt.jus.br/dejt/f/n/materiapublicadacon');
-    await page.screenshot({ path: 'example.png' });
+//  (async () => {
+ //   const browser = await puppeteer.launch();
+  //  const page = await browser.newPage();
+  //  await page.goto('https://dejt.jt.jus.br/dejt/f/n/materiapublicadacon');
+   // await page.screenshot({ path: 'example.png' });
 
-    await browser.close();
-  })();
+  //  await browser.close();
+  //})();
 
 });
-https://dejt.jt.jus.br/dejt/f/n/materiapublicadacon#
 
-https://dejt.jt.jus.br/dejt/f/n/materiapublicadacon#
+
+
+
 

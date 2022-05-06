@@ -5,6 +5,7 @@ class App {
 
   constructor() {
     this.server = express();
+    console.log('Algo esta tentando falar alguma coisa');
     this.server.use(bodyParser.json());
     this.server.use(bodyParser.urlencoded({ extended: true }));
     this.server.use(cors({ credentials: true }));

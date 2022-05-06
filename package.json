@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git add -A & git commit -m 'change automatic' & git push -u origin master",
     "dev": "nodemon server.js"
   },
   "author": "",
@@ -14,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "mqtt": "^4.3.7",
+    "mqtt-server": "^0.1.0",
     "nodemon": "^2.0.15",
     "puppeteer": "^13.7.0"
   }
