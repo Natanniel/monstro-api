@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git add -A & git commit -m 'change automatic' & git push -u origin master",
+    "deploy": "git add -A & git commit -m 'deploy' & git push -u origin master",
     "dev": "nodemon server.js"
   },
   "author": "",
