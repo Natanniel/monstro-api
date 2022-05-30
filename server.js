@@ -2,10 +2,10 @@ var fs = require('fs');
 var mqttServer = require('mqtt-server');
  
 servers = mqttServer({
-  mqtt: 'tcp://localhost:61613',
-  mqtts: 'ssl://localhost:8883',
-  mqttws: 'ws://localhost:1884',
-  mqtwss: 'wss://localhost:8884'
+ // mqtt: 'tcp://localhost:61613',
+  mqtts: 'ssl://localhost:61613',
+ // mqttws: 'ws://localhost:61613',
+ // mqtwss: 'wss://localhost:61613'
 }, {
   ssl: {
   //  key: fs.readFileSync('./key.key'),
