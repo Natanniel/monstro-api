@@ -1,35 +1,26 @@
-const nodemon = require("nodemon");
-const server = require("./app");
-//const { ObjectID, ObjectId } = require("mongodb");
--
-server.listen(61613, async function () {
-  console.log("Servidor em funcionamento !");
-
-//  const mqtt = require('mqtt') 
- // const client  = mqtt.connect('tcp://monstro.tv.br:61616')
-
- // console.log(client);
-//  let Mesa = require('./api/models/mesa');
- // let mesa = new Mesa({
-  //  empresa: ObjectId("622ad928dd8d8a1ad4c2545b"),
-  //  nome: 'F2'
-  //})
-
-  //mesa.save();
-
-//const puppeteer = require('puppeteer');
-
-//  (async () => {
- //   const browser = await puppeteer.launch();
-  //  const page = await browser.newPage();
-  //  await page.goto('https://dejt.jt.jus.br/dejt/f/n/materiapublicadacon');
-   // await page.screenshot({ path: 'example.png' });
-
-  //  await browser.close();
-  //})();
-
+var fs = require('fs');
+var mqttServer = require('mqtt-server');
+ 
+mqttServer({
+  mqtt: 'tcp://localhost:1883',
+  mqtts: 'ssl://localhost:8883',
+  mqttws: 'ws://localhost:1884',
+  mqtwss: 'wss://localhost:8884'
+}, {
+  ssl: {
+    key: fs.readFileSync('./key.key'),
+    cert: fs.readFileSync('./crt.crt')
+  },
+  emitEvents: true // default
+}, function(client){
+  client.connack({
+    returnCode: 0
+  });
 });
-
+ 
+servers.listen(function(){
+  console.log('listening!');
+});
 
 
 
