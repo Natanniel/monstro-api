@@ -1,0 +1,17 @@
+
+EQUIPMENT/SERVER/C14W00700211
+{
+  MI: 'C14W00700211',
+  AT: 'Return',
+  TS: '1654027060',
+  GH: { BI: 'BC0713E4', BO: '0', BC: '45', WI: 'ok', ST: 'ok' },
+  DD: {
+    DI: 'C14W00700211',
+    DT: 'MqBattery-Video',
+    LL: '',
+    BC: '10',
+    CB: 2,
+    CR: 8,
+    BL: [ [Object], [Object] ]
+  }
+}
